@@ -1,0 +1,26 @@
+#red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+#green {
+  color: green;
+}
+
+#bred {
+  background-color: red;
+  font-family: monospace, Helvetica, sans-serif;
+}
+
+#bblue {
+  background-color: blue;
+  font-family: monospace, Helvetica, sans-serif;
+}
+
+#bgreen {
+  background-color: green;
+  font-family: monospace, Helvetica, sans-serif;
+}
