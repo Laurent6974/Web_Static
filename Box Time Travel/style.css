@@ -14,9 +14,10 @@ h1 {
   font-size: 70px;
 }
 
-strong {
+span {
   font-weight: bold;
   color: darksalmon;
+  font-size: 30px;
 }
 
 /* CSS PAR SECTION */
@@ -96,4 +97,5 @@ h4 {
   display: inline-block;
   margin: 15px;
   padding: 10px;
+  color: darksalmon;
 }
