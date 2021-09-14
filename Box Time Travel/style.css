@@ -1,0 +1,99 @@
+/* CSS GENERAL */
+
+body {
+  margin: 0%;
+  font-family: "Work Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+strong {
+  font-weight: bold;
+  color: darksalmon;
+}
+
+/* CSS PAR SECTION */
+
+header {
+  background: url(img/pyramides.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 50px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+}
+
+#destinations {
+  display: flex;
+  align-items: center;
+}
+
+#destinations img {
+  width: 33%;
+  padding-right: 80px;
+}
+
+.formule {
+  width: 25%;
+  border: darksalmon solid 2px;
+  padding: 10px;
+}
+
+#abonnements div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#abonnements div p,
+h4 {
+  text-align: center;
+}
+
+#abonnements div .formule p strong {
+  font-size: 20px;
+}
+
+#abonnements div .formule p strong sup {
+  font-size: 10px;
+}
+
+#abonnements h2 {
+  text-align: center;
+}
+
+#concept img {
+  width: 33%;
+}
+
+#concept div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#concept div article {
+  margin: 10px;
+}
+
+#concept div article a {
+  border: darksalmon solid 1px;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+}
