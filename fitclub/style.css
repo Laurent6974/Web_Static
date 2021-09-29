@@ -1,0 +1,258 @@
+/* CSS GENERAL */
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  margin-bottom: 1px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.largeur1 {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STYLE HEADER */
+
+header {
+  background-image: linear-gradient(to left, #00000040, rgba(124, 40, 99, 0.25)),
+    url(img/fitness.jpg);
+  background-size: cover;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 20px;
+}
+
+header nav img {
+  width: 60px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header #title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  padding-top: 100px;
+}
+
+/* STYLE ENTETE/PROGRAMME */
+
+article {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#programme {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#programme:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/fitnessman.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#programme:nth-of-type(2n) {
+  background-image: linear-gradient(
+      rgba(124, 40, 99, 0.6),
+      rgba(124, 40, 99, 0.6)
+    ),
+    url(img/fitnesswoman.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#entete {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+/* STYLE OBJECTIF/ARTICLE */
+
+#objectif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+#outils {
+  display: flex;
+  padding-right: 0;
+}
+
+#outils article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: auto;
+  padding-right: auto;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+/* STYLE CHOIX */
+
+#choix {
+  background-image: linear-gradient(
+      to right,
+      rgba(124, 40, 99, 0.233) 60%,
+      rgb(0, 0, 0) 40%
+    ),
+    url("img/crossfit.jpg");
+  background-repeat: no-repeat;
+  padding: 70px;
+}
+
+#choix div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  margin-right: auto;
+  margin-left: 65%;
+}
+
+#choix div h2 {
+  margin-left: -120px;
+}
+
+/* STYLE DAMIER */
+
+#damier {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#damier article {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#damier article:nth-child(2n + 1) {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* STYLE FOOTER */
+
+footer {
+  background: black;
+  border-top: 10px solide rgb(124, 40, 99);
+  color: white;
+  padding: 20px 0;
+}
+
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer i {
+  font-size: 20px;
+}
+
+footer article,
+footer aside {
+  width: 24%;
+}
+
+footer article {
+  text-align: right;
+}
+
+footer article img {
+  height: 50px;
+}
+
+footer article ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer form {
+  background: white;
+  color: black;
+  padding: 60px 50px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  margin-top: -150px;
+  position: relative; /* pour utiliser le z index */
+  z-index: 1;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer form h2 {
+  text-transform: uppercase;
+}
+
+footer form input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 30px 0;
+  padding: 5px;
+}
+
+footer form input[type="text"]::placeholder {
+  color: black;
+}
+
+footer form input[type="submit"] {
+  border: none;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer aside ul li {
+  display: flex;
+  align-items: baseline;
+}
+
+footer aside ul li i {
+  color: rgb(124, 40, 99);
+  margin-right: 15px;
+}
+
+footer aside ul li h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+}

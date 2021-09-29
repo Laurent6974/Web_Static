@@ -1,0 +1,226 @@
+/* CSS GENERAL */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #ea9191;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: #ea9191;
+  color: white;
+}
+
+@font-face {
+  font-family: "Rockwell";
+  src: url(Rockwell.ttf) format("truetype");
+}
+
+h2 {
+  color: #ea9191;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Rockwell, serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* CSS LANDING PAGE PAR SECTION */
+header {
+  background-image: linear-gradient(to top right, #ea919181, #4b497550),
+    url(Cornfood\ -\ ressources/img/photo.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 150px;
+  margin-bottom: 150px;
+}
+
+header::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+  background: black;
+  margin-left: calc(50% - 20px);
+  margin-top: -15px;
+  background: white;
+  bottom: -20px;
+}
+
+header div p {
+  font-family: Rocwkell, serif;
+}
+
+header nav img {
+  width: 150px;
+}
+
+#fond_jaune div h2:before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url(Cornfood\ -\ ressources//img/grain.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #e6b331;
+  position: absolute;
+  z-index: -1;
+  margin-left: -55px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+  margin-top: -100px;
+}
+
+section:first-of-type div h2 {
+  padding-left: 90px;
+  padding-bottom: 30px;
+}
+
+#produits {
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+#produits img {
+  width: 150px;
+}
+
+/* CSS POUR FOOTER */
+
+footer {
+  background: linear-gradient(to top right, #7d7ba7 -20%, #ea9191, #e6b331);
+  padding: 50px;
+  margin-top: 50px;
+  color: white;
+}
+
+input {
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 15px;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#message {
+  padding-bottom: 150px;
+}
+
+#message::placeholder {
+  display: inline-block;
+  color: white;
+}
+
+input[type="submit"] {
+  margin-top: -15px;
+  background-color: #ea9191;
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  margin-left: calc(50% - 50px);
+  margin-bottom: -10px;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #ea9191;
+}
+
+#barre_h::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 50px;
+  border: 1px solid white;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+#barre_l::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 0px;
+  border: 1px solid white;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -25px;
+}
+
+footer img:nth-of-type(2) {
+  margin-left: 140px;
+  margin-top: -85px;
+}
+
+.barre_2 {
+  padding-left: 127px;
+  margin-top: -10px;
+}
+
+footer p:last-of-type {
+  margin-left: 100px;
+}
+
+#logo_reseaux {
+  width: 30px;
+}
+
+.reseaux {
+  padding-left: 105px;
+}
+
+hr {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+}
+
+/* CSS PAR SECTION PRODUCT PAGE */
+
+#product_produit {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.24)),
+    url(Cornfood\ -\ ressources/img/granola.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+#carousel_1 img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+#fond_carousel {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* mobile < 768px*/
+@media (max-width: 767px) {
+}

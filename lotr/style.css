@@ -1,0 +1,59 @@
+/* CSS GENERAL */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h1,
+h2,
+h3,
+li,
+a {
+  font-family: "Cormorant Unicase", serif;
+}
+/* CSS PAR SECTION */
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.253)),
+    url(img/perso.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+header div h1 {
+  margin-bottom: 0px;
+}
+
+header div p {
+  margin-top: 0px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav img {
+  height: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
