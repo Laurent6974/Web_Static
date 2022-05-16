@@ -1,39 +1,175 @@
-h1 {
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-}
+/* CSS GENERAL */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-ul li {
-  list-style: none;
-  text-decoration: none;
+h1 {
+  letter-spacing: 5px;
 }
+
+h2 {
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 991;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* CSS PAR SECTION */
+
+/* CSS HEADER */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("img/detoxcuresmoothie.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(img/detoxcuresmoothie.jpg);
   background-position: center;
   background-size: cover;
+  padding-bottom: 150px;
 }
 
-header nav img {
-  height: 50px;
+header div nav {
+  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
   text-align: center;
-  padding: 150px 0;
-  text-transform: none;
-  font-size: 4rem;
-  letter-spacing: 5px;
+  color: white;
 }
 
-#fabrication {
-  background: linear-gradient(#feb4c3, #f59e28);
+header nav a {
+  text-decoration: none;
 }
+
+header img {
+  width: 120px;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  color: white;
+  padding-left: 15px;
+}
+
+/* CSS MAIN */
+
+/* CSS DEVISE */
+
+#devise {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#devise div {
+  width: 50%;
+}
+
+#devise div p {
+  line-height: 20px;
+}
+
+#devise img {
+  width: 300px;
+}
+
+/* FIN CSS DEVISE */
+
+/* CSS METHODE */
+
+#methode {
+  background: linear-gradient(#feb4c3, #f59e28);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+#methode img {
+  padding-top: 50px;
+  padding-bottom: 39px;
+}
+
+/* FIN CSS METHODE */
+
+/* CSS CONCEPT */
+
+#concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#concept div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#concept div article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#concept div article img {
+  width: 80px;
+  padding: 20px 0;
+}
+
+/* FIN CSS CONCEPT */
+
+/* CSS FOOTER */
 
 footer {
   background: #f59e28;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
+
+/* FIN CSS FOOTER */
+
+/* CSS MEDI QUERIES */
+
+/* TABLETTE < 991px */
+@media (max-width: 990px) {
+  #devise {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #concept div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* FIN CSS MEDIA QUERIES TABLETTE */
+
+/* mobile < 768px*/
+@media (max-width: 767px) {
+  #devise {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #concept div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* FIN CSS MEDIA QUERIES PORTABLE */
+
+/* FIN MEDIA QUERIES */

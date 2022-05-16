@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Smoothie</title>
 </head>
@@ -16,81 +11,87 @@
 <body>
     <header>
         <div class="container">
-            <div class="row">
-                <nav class="d-flex justify-content-between">
-                    <a href="#"><img src="img/logoblanc.svg" alt="logo smoothie"></a>
-                    <ul class="d-flex">
-                        <li class="text-decoration-none"><a href="#"
-                                class="text-white mx-2 text-decoration-none">Accueil</a></li>
-                        <li class="text-decoration-none"><a href="#"
-                                class="text-white mx-2 text-decoration-none">Produits</a></li>
-                        <li class="text-decoration-none"><a href="#"
-                                class=" text-white mx-2 text-decoration-none">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <h1>Fabriquants de smoothies bio</h1>
+            <nav>
+                <a href="#"><img src="img/logoblanc.svg" alt="logo Smoothie"></a>
+                <ul>
+                    <a href="#">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="#">
+                        <li>Produits</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <h1>Fabriquant de smoothies bio</h1>
         </div>
     </header>
+
     <main>
-        <section id="devise" class="container d-lg-flex align-items-center justify-content-center row pe-0">
-            <img src="img/fond rose.jpg" alt="Photo smoothie fond rose" class=" col-lg-3 col-12 my-5">
-            <div class="col-lg-5 ">
-                <h2 class="text-center text-uppercase">NOTRE DEVISE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo officia, harum laborum et,
-                    necessitatibus neque totam odit doloribus, nemo quia fuga corporis sit alias nostrum sint veritatis
-                    itaque voluptas.</p>
+        <section class="container" id="devise">
+            <img src="img/fond rose.jpg" alt="photo d'un smoothie">
+            <div>
+                <h2>Notre devise</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum id amet similique in, est quibusdam
+                    dolorem veniam voluptatibus sint ratione porro earum explicabo fugiat illum ipsum accusantium quod
+                    provident suscipit?
+                </p>
             </div>
         </section>
 
-        <section id="fabrication" class="text-center text-white py-5">
-            <div class="container">
-                <h2>Méthode de fabrication</h2>
-                <ul>
-                    <li>
-                        <img src="img/tree-02.png" alt="logo d'arbre" class="p-5">
-                    </li>
-                    <h3>Nos producteurs récoltent les meilleurs fruits à la main</h3>
-                    <li><img src="img/bike-bmx.png" alt="logo d'un vélo" class="p-5">
-                        <h3>Nos fruits sont livrés par des méthodes de transport écologiques</h3>
-                    </li>
-                    <li><img src="img/chef.png" alt="logo d'un chef de cuisine" class="p-5">
-                        <h3>Nos smoothiers préparent vos smoothies à la demande et sous vos yeux</h3>
-                    </li>
-                    <li><img src="img/juice.png" alt="logo d'un jus" class="p-5">
-                        <h3>Vous dégustez votre smoothie sous l'ombre de nos palmiers</h3>
-                    </li>
-                </ul>
-            </div>
+        <section id="methode">
+            <h2>Méthode de fabrication</h2>
+            <article>
+                <img src="img/tree-02.png" alt="logo d'un arbre">
+                <h4>Nos producteur récoltent les meilleurs fruits à la main</h4>
+            </article>
+
+            <article>
+                <img src="img/bike-bmx.png" alt="logo d'un arbre">
+                <h4>Nos producteur récoltent les meilleurs fruits à la main</h4>
+            </article>
+
+            <article>
+                <img src="img/chef.png" alt="logo d'un arbre">
+                <h4>Nos producteur récoltent les meilleurs fruits à la main</h4>
+            </article>
+
+            <article>
+                <img src="img/juice.png" alt="logo d'un arbre">
+                <h4>Nos producteur récoltent les meilleurs fruits à la main</h4>
+            </article>
         </section>
 
+        <section class="container" id="concept">
+            <h2>Notre concept</h2>
+            <div>
+                <article>
+                    <img src="img/blender.png" alt="logo d'un blender">
+                    <h4>Pressés sur place</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, odio.</p>
+                </article>
 
-        <section id="concept" class="container text-center py-3">
-            <h2>LE CONCEPT</h2>
-            <div class="d-lg-flex py-5">
                 <article>
-                    <img src="img/organic.png" alt="logo organic">
-                    <h3>Pressés sur place</h3>
-                    <p>ipsum qui adipiscing quis mollit nostrud laboris dolore</p>
+                    <img src="img/kiwi.png" alt="logo d'un kiwi">
+                    <h4>Produits frais</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, odio.</p>
                 </article>
+
                 <article>
-                    <img src="img/kiwi.png" alt="logo kiwi">
-                    <h3>Produits frais</h3>
-                    <p>ipsum qui adipiscing quis mollit nostrud laboris dolore</p>
-                </article>
-                <article>
-                    <img src="img/blender.png" alt="logo blender">
-                    <h3>Produits bios et locaux</h3>
-                    <p>ipsum qui adipiscing quis mollit nostrud laboris dolore</p>
+                    <img src="img/organic.png" alt="logo de feuilles">
+                    <h4>Produits bio et locaux</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, odio.</p>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer class="text-white py-3 text-center">
+    <footer>
         <p>2019 © AH</p>
     </footer>
-
 </body>
 
 </html>

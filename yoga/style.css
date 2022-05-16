@@ -1,148 +1,200 @@
 /* CSS GENERAL */
 
-body {
-  margin-left: auto;
-  margin-right: auto;
+* {
   font-family: "Raleway", sans-serif;
-  max-width: 1060px;
 }
 
-h1 {
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
   font-family: "Mandali", sans-serif;
-  font-size: 80px;
-  letter-spacing: 5px;
-  margin: 0%;
-  line-height: 100%; /* gérer l'interlignage*/
 }
 
 h2 {
   color: #6e8e9b;
 }
 
-nav {
-  margin-left: 30px;
-  margin-right: 30px;
+li {
+  list-style: none;
+  display: inline-block;
 }
 
 .btn {
-  border: 1px solid white;
-  padding: 8px 18px;
-  margin: 10px;
-  border-radius: 50px;
   background-color: white;
-  color: black;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+  color: black !important;
+  padding: 8px 15px;
+  border-radius: 50px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
 }
-
 .btn:hover,
-input[type="radio"]:checked + label {
+main #contact form input[type="radio"]:checked + label {
   background-color: #6e8e9b;
-  color: white;
+  color: white !important;
 }
 
 /* CSS PAR SECTION */
 
+/* CSS HEADER */
+
 header {
-  background-image: url(img/yogamat.jpg);
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(img/yogamat.jpg);
   background-position: center;
-  color: white;
-  padding-top: 20px;
-  padding-bottom: 150px;
+  background-size: cover;
 }
 
 header div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 220px;
+  line-height: 40px;
 }
 
-header nav ul li {
-  display: inline-block;
-  margin-left: 30px;
+header div h1 {
+  font-size: 90px;
+  line-height: 0px;
+  text-transform: uppercase;
 }
 
 header nav {
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-#concept article {
-  display: flex;
+header nav ul li a {
+  color: white;
+  padding: 0 10px;
 }
 
-@media (min-width:991px){
-#concept article:nth-of-type(odd) {
-  flex-direction: row-reverse;
-}s
-}
-
-
-#concept article img {
-  height: 90px;
-  margin-right: 40px;
-  padding: 20px;
-  box-shadow: 0px 0px 0px 1px rgba(206, 205, 205, 0.481);
-  border-radius: 50%;
-  border-width: 150%;
-}
+/* CSS CONCEPT */
 
 #barre::after {
   content: "";
   display: block;
-  width: 0px;
+  background: #6e8e9b;
+  width: 2px;
   height: 50px;
-  border: 2px solid #6e8e9b;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  position: absolute;
 }
 
-#cours article {
+#concept {
+  padding: 40px;
+  position: relative;
+}
+
+#concept article {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+#concept article div {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
 }
 
-#cours div {
-  display: flex;
-  align-items: center;
+#concept article img {
+  margin-right: 79px;
 }
 
-#cours h2 {
-  margin: 0px;
+#concept article:nth-of-type(2) {
+  flex-direction: row-reverse;
 }
+
+#concept article:nth-of-type(2) img {
+  margin-left: 70px;
+  margin-right: 75px;
+}
+
+#concept div:nth-of-type(2) {
+  padding-top: 15px;
+}
+
+#concept h2 {
+  margin-bottom: 0;
+}
+
+#concept article img {
+  height: 40px;
+  box-shadow: 1px 1px 1px 1px rgba(95, 95, 95, 0.2);
+  border-radius: 50px;
+  padding: 30px;
+}
+
+/* CSS COURS */
 
 #cours img {
-  width: 30%;
+  height: 500px;
+  width: 500px;
 }
 
-#rappel {
+#cours div h3,
+p {
+  padding-left: 40px;
+  padding-right: 80px;
+}
+
+#cours div:nth-of-type(2) {
   display: flex;
   align-items: center;
 }
 
-input[type="radio"] {
+/* CSS FORM */
+
+#contact form input[type="radio"] {
   display: none;
 }
 
-.proposition {
+#contact form label.btn {
+  margin-left: 20px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"] {
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3) inset;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50px;
+}
+
+#contact form input,
+#contact form select {
+  font-family: "Raleway", sans-serif;
+}
+
+#contact form li {
+  margin-bottom: 30px;
+}
+
+#contact form ul {
   display: flex;
+  flex-direction: column;
 }
 
-.proposition select {
-  margin-left: 10px;
+/* CSS FOOTER */
+
+footer {
+  background: #6e8e9b;
+  padding: 15px 0;
+  text-align: center;
+  align-items: center;
 }
 
-/* tablette entre 768px et 991px */
-@media (min-width: 768px) and (max-width: 990px) {
-  #cours article{
-    align-items: center;
-  }
-}
-
-/* mobile < 768px*/
-@media (max-width: 767px) {
-  
+footer p {
+  margin: 0;
 }
